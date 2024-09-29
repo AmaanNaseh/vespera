@@ -4,14 +4,143 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <meta name="description" content="Web site created using create-react-app" />
-
   <title>Vespera</title>
+  <style>
+    /* Set the body background color to black and text color to white */
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif; /* Added a font for better readability */
+    }
+
+    /* Basic styling for navbar with Flexbox */
+    .navbar {
+      background-color: black; /* Changed navbar color to black */
+      display: flex;
+      justify-content: space-between; /* Space between logo and links */
+      align-items: center; /* Center align items vertically */
+      padding: 14px 20px;
+    }
+
+    .navbar img {
+      height: 50px; /* Adjust the height of the logo */
+      width: auto; /* Maintain aspect ratio */
+    }
+
+    .navbar a {
+      color: white; /* Text color for links in navbar */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd; /* Light gray background on hover */
+      color: black; /* Text color on hover */
+    }
+
+    /* Style for the centered "HACKATHON" text */
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: calc(100vh - 200px);
+      text-align: center;
+      width: 100%; /* Make the center-container full width */
+    }
+
+    .center-container h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 5px; /* Minimizing space between HACKATHON and DESCRIPTION */
+      position: relative; /* To position the pseudo-element */
+      width: 100%; /* Ensure the h1 takes full width */
+    }
+
+    /* Underline as a pseudo-element */
+    .center-container h1::after {
+      content: "";
+      display: block;
+      width: 100%; /* Full width */
+      height: 2px; /* Thickness of the underline */
+      background-color: rgb(49, 47, 47); /* Color of the underline */
+      position: absolute;
+      bottom: -5px; /* Position it just below the text */
+      left: 0; /* Align it to the left */
+    }
+
+    /* Style for sections in a box */
+    .description {
+      width: 40%; /* Adjust width as necessary */
+      padding: 80px; /* Padding for the box */
+      border: 2px solid #333; /* Border for the box */
+      background-color: rgb(44, 43, 43); /* Background color */
+      text-align: left; /* Align text to the left */
+      margin: 20px 0; /* Adjust margin for spacing */
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Optional box shadow for 3D effect */
+    }
+
+    .description h2 {
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0; /* Remove default margin to place title at the top */
+      padding: 0; /* Ensure no padding */
+      text-align: left; /* Align the title to the left */
+    }
+
+    .description p {
+      margin-top: 10px; /* Add a small margin to paragraphs */
+    }
+  </style>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Navbar Section -->
+  <div class="navbar">
+    <img src="path_to_your_logo.png" alt="Logo" /> <!-- Replace with the path to your logo -->
+    <div>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#FAQ">FAQ</a>
+      <a href="#sponsors">Sponsors</a>
+    </div>
+  </div>
+
+  <!-- Centered HACKATHON text -->
+  <div class="center-container">
+    <h1>HACKATHON</h1>
+
+    <!-- Left-aligned DESCRIPTION text inside a box -->
+    <div class="description">
+      <h2>DESCRIPTION</h2>
+      
+    </div>
+
+    <!-- PRIZES section -->
+    <div class="description">
+      <h2>PRIZES</h2>
+     
+    </div>
+
+    <!-- TIMELINE section -->
+    <div class="description">
+      <h2>TIMELINE</h2>
+      
+    </div>
+
+    <!-- FAQs section -->
+    <div class="description">
+      <h2>FAQs</h2>
+     
+    </div>
+  </div>
+
   <div id="root"></div>
 
 </body>
