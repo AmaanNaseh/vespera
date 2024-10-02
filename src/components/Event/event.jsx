@@ -17,7 +17,7 @@ function Event() {
           style={{ left: '50%', transform: 'translateX(-50%)' }} 
         />      
 
-        <p className="relative z-10 pt-20 font-serif text-7xl text-center text-white">
+        <p className="relative z-10 pt-20 font-fogLighten font-serif text-6xl text-center text-glow text-white sm:text-8xl md:text-10xl">
           Events
         </p>
       </div>

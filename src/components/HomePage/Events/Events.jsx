@@ -13,7 +13,7 @@ import EVENT_4_ALT from "../../../assets/HomePage/HeroSection/event4alt.png";
 const Events = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <h2 className="mb-4 font-bold text-2xl">EVENTS</h2>
+      <h2 className="mb-8 font-bold text-2xl sm:text-3xl md:text-4xl">EVENTS</h2>
 
       <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4">
         <EventCard image={EVENT_1} altImage={EVENT_1_ALT} title="HACKATHON" description="Lorem" />

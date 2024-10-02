@@ -5,7 +5,7 @@ import SPONSER2 from "../../../assets/HomePage/HeroSection/sponser2.png";
 const Sponsers = () => {
   return (
     <div className='flex flex-col items-center w-full'>
-      <h1 className='mb-4 font-bold text-2xl'>SPONSERS</h1>
+      <h1 className='mb-8 font-bold text-2xl sm:text-3xl md:text-4xl'>SPONSERS</h1>
 
       <div className='gap-4 grid grid-cols-1 sm:grid-cols-2'>
         <div className='flex justify-center items-center bg-[#141414] p-4 rounded-xl h-[200px]'>

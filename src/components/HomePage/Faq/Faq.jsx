@@ -13,7 +13,7 @@ function Faq() {
 
   return (
     <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
-      <h1 className="mt-10 mb-10 sm:mb-16 font-bold text-lg text-white sm:text-xl md:text-2xl">
+      <h1 className="my-8 sm:mb-16 font-bold text-2xl text-white sm:text-3xl md:text-4xl">
         FAQ
       </h1>
 

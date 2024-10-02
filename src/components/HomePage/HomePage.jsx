@@ -10,8 +10,8 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-12 bg-black h-full font-spaceGrotesk text-white hero">
-      <div className="overlay"></div>
+    <div className="flex flex-col gap-12 bg-black h-full font-spaceGrotesk text-white">
+      <div className=""></div>
 
       <HeroSection />
       <About />
