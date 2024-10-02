@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./assets/HomePage/font/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "FoglihtenNo07 Calt";
+  src: url("./assets/HomePage/font/foglihtenno07/FoglihtenNo07calt.otf");
+}

@@ -1,0 +1,38 @@
+/* custom.css */
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+    /* soft glow closer to the text */ 0 0 40px rgba(255, 255, 255, 0.4),
+    /* wider halo effect */ 0 0 100px rgba(255, 255, 255, 0.3); /* further diffused distant glow */
+}
+/* custom.css */
+.text-glow-wide {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.7),
+    /* wide, intense glow near the text */ 0 0 100px rgba(255, 255, 255, 0.5),
+    /* very wide halo */ 0 0 200px rgba(255, 255, 255, 0.4); /* extremely diffused, far glow */
+}
+
+/* custom.css */
+.image-glow-hover {
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* custom.css */
+.image-glow {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7),
+    /* wide, intense glow near the image */ 0 0 100px rgba(255, 255, 255, 0.5),
+    /* very wide glow */ 0 0 200px rgba(255, 255, 255, 0.4); /* extremely diffused, far glow */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-animation {
+  display: flex;
+  animation: loop-scroll 30s linear infinite;
+}
