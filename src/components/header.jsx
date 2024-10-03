@@ -23,7 +23,7 @@ function Header() {
         <img 
           src={back} 
           alt="Background" 
-          className="pt-7 absolute inset-0 w-[200px] h-[200px] object-cover opacity-50" 
+          className="pt-7 absolute inset-0 w-[200px] h-[200px] object-cover opacity-80" 
           style={{ left: '50%', transform: 'translateX(-50%)' }} 
         />      
 

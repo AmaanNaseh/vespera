@@ -7,7 +7,7 @@ function App() {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "750vh"
+    height: "700vh"
     
   };
   return <div style={myStyle}>
