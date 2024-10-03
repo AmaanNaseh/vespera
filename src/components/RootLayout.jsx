@@ -1,15 +1,20 @@
-import React from 'react';
-import { Outlet } from "react-router-dom";
-import Navbar from "../components/HomePage/Navbar/Navbar";
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop"; // Adjust the import path as needed
+import { ScrollRestoration } from "react-router-dom";
+import Navbar from "./HomePage/Navbar/Navbar";
 
 const RootLayout = () => {
   return (
     <div>
-      <Navbar />
-      {/* Add a div wrapper to apply margin-top */}
-      <div className="mt-[50px]">
-        <Outlet />
-      </div>
+      <ScrollToTop />
+      <header>
+        <Navbar />
+      </header>
+      <main className="mt-[50px]">
+        <Outlet /> {/* This is where the child routes will be rendered */}
+        <ScrollRestoration /> {/* Restore scroll position on navigation */}
+      </main>
     </div>
   );
 };

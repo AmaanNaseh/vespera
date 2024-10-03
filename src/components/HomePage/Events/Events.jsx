@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 import EVENT_1 from "../../../assets/HomePage/HeroSection/event1.png";
 import EVENT_2 from "../../../assets/HomePage/HeroSection/event2.png";
@@ -28,6 +29,7 @@ const Events = () => {
 // New EventCard component for reusability
 const EventCard = ({ image, altImage, title, description }) => {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   return (
     <div
@@ -36,12 +38,13 @@ const EventCard = ({ image, altImage, title, description }) => {
       }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => navigate("/events")} // Navigate on click
     >
       <div className="flex justify-center items-center h-2/3">
         <img 
           src={hovered ? altImage : image} 
           alt={title} 
-          className="max-w-full max-h-full transition-all duration-300" 
+          className="w-[220px] max-w-full max-h-full transition-all duration-300" 
         />
       </div>
 
