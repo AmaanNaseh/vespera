@@ -8,7 +8,7 @@ import people from '../image/people.png';
 function Event() {
   return (
     <div>
-      {/* Responsive Header */}
+   
       <div className="container flex items-center pt-2 px-4 lg:px-10">
         <img src={logo} alt="Logo" className="h-8 w-auto" />
         <div className="ml-auto flex space-x-3">
@@ -20,7 +20,7 @@ function Event() {
         </div>
       </div>
 
-      {/* Title Section */}
+    
       <div className="title relative">
         <img 
           src={back} 
@@ -45,17 +45,17 @@ function Event() {
       ].map((event, index) => (
         <div key={index} className="container mx-auto mt-10 lg:mt-40 max-w-5xl bg-neutral-950 p-6 lg:p-10 rounded-lg shadow-lg">
           <div className="flex flex-col lg:flex-row">
-            {/* Left Section (Image) */}
+
             <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
               <img src={box} alt="Left Section Image" className="object-cover w-full h-full rounded-lg" />
             </div>
             
-            {/* Right Section (Title, Paragraph, Date, Participants) */}
+
             <div className="w-full lg:w-2/3 pl-0 lg:pl-10 flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">{event.title}</h2>
               <p className="text-base md:text-lg text-white mb-6">{event.paragraph}</p>
 
-              {/* Date and Participants Info */}
+          
               <div className="flex items-center space-x-4 md:space-x-8">
                 <div className="flex items-center space-x-2">
                   <img src={calander} alt="Calendar" className="h-5 w-5 md:h-6 md:w-6" />
