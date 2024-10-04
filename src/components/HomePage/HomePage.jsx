@@ -6,6 +6,8 @@ import Sponsers from "./Sponsers/Sponsers";
 import Faq from "./Faq/Faq";
 import Footer from "./Footer/Footer";
 
+import { Element } from "react-scroll";
+
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -14,10 +16,14 @@ const HomePage = () => {
       <div className=""></div>
 
       <HeroSection />
-      <About />
+      <Element name="aboutSection">
+        <About />
+      </Element>
       <Events />
       <Sponsers />
-      <Faq />
+      <Element name="faqSection">
+        <Faq />
+      </Element>
       <Footer />
     </div>
   );

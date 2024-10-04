@@ -22,20 +22,12 @@ function Event() {
   const navigate = useNavigate();
 
   return (
-    <section>
-        <div className='bg-black' style={{backgroundImage:`url(${background})`, backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
-        <div className="relative title">
-            <img 
-            src={back} 
-            alt="Background" 
-            className="absolute inset-0 pt-7 w-[200px] h-[200px] object-cover" 
-            style={{ left: '50%', transform: 'translateX(-50%)' }} 
-            />
-            <p className="relative z-10 pt-20 font-fogLighten font-serif text-6xl text-center text-glow text-white sm:text-8xl md:text-10xl">
-            Events
-            </p>
-        </div>
-        <div className='bg-gray-300 mt-[10px] sm:mt-[-70px] md:mt-[0px] w-full h-[0.5px] '></div>
+    <section className=' bg-black w-full'>
+        <div className=' flex flex-col items-center bg-black w-full' style={{backgroundImage:`url(${background})`, backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
+        <div className='flex justify-center items-center mt-[40px] sm:mt-[100px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
+        <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Events</h1>
+      </div>
+      <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
 
         {/* Event Sections */}
         {events.map((event, index) => (

@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import LOGO from "../../../assets/HomePage/logo.png";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link as ScrollLink,scroller } from "react-scroll";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Effect to handle scroll event
   useEffect(() => {
@@ -22,6 +25,24 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
+    const handleAboutClick = (nameSection) => {
+      console.log(location.pathname);
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          scroller.scrollTo(nameSection, {
+            smooth: true,
+            duration: 500,
+          });
+        }, 100);
+      } else {
+        scroller.scrollTo(nameSection, {
+          smooth: true,
+          duration: 500,
+        });
+      }
+    };
 
   return (
     <div
@@ -61,7 +82,7 @@ const Navbar = () => {
           >
             <p
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
-              onClick={()=>setMenuOpen(!menuOpen)}
+              onClick={()=>{handleAboutClick("aboutSection"); setMenuOpen(!menuOpen)}}
             >
               About
             </p>
@@ -81,7 +102,7 @@ const Navbar = () => {
             </Link>
             <p
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
-              onClick={()=>setMenuOpen(!menuOpen)}
+              onClick={()=>{handleAboutClick("faqSection"); setMenuOpen(!menuOpen)}}
             >
               FAQ
             </p>
@@ -97,7 +118,7 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="md:flex justify-center items-center gap-8 hidden">
-          <p className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
+          <p onClick={()=>handleAboutClick('aboutSection')} className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
             About
           </p>
           <Link to="/events" className="text-gray-400 text-lg hover:text-white">
@@ -106,7 +127,7 @@ const Navbar = () => {
           <Link to="/speakers" className="text-gray-400 text-lg hover:text-white">
             Speakers
           </Link>
-          <p className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
+          <p onClick={()=>handleAboutClick('faqSection')} className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
             FAQ
           </p>
           <Link to="/sponsers" className="text-gray-400 text-lg hover:text-white">
