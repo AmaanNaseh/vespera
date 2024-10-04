@@ -62,30 +62,35 @@ const Navbar = () => {
             <Link
               to="/about"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               About
             </Link>
             <Link
               to="/events"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Events
             </Link>
             <Link
               to="/speakers"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Speakers
             </Link>
             <Link
               to="/faq"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               FAQ
             </Link>
             <Link
               to="/sponsers"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Sponsors
             </Link>

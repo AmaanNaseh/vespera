@@ -81,10 +81,11 @@ const HeroSection = () => {
           <img
             src={STAR_2}
             alt="Star"
-            className="top-0 right-0 absolute mr-2 h-[2rem] sm:h-[3rem] md:h-[5rem]"
+            className="top-0 right-0 absolute mr-2 h-[2rem] sm:h-[3rem] md:h-[5rem] mb-[20px]"
           />
         </div>
       </div>
+      <div className='bg-gray-400 w-full h-[0.2px] mt-[-40px] mb-[20px]'></div>
       <div
         className="my-6border-t-2 whitespace-nowrap overflow-hidden"
         ref={scrollContainerRef}
