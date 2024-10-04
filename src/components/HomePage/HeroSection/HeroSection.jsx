@@ -74,18 +74,20 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${BACK_HERO})` }}
       >
         <div className="relative">
-          <h1 className="font-fogLighten text-[4rem] text-glow-wide sm:text-[5rem] md:text-[8.75rem]">
+          <h1 className="font-fogLighten text-[4rem] text-glow sm:text-[6rem] md:text-[11rem]">
             Vespera
           </h1>
+          <p className="font-fogLighten text-[1.5rem] text-center text-glow-date sm:text-[2rem] md:text-[4rem]">25.10.2024 - 26.10.2024</p>
           <img
             src={STAR_2}
             alt="Star"
-            className="top-0 right-0 absolute mr-2 h-[2rem] sm:h-[3rem] md:h-[5rem]"
+            className="top-0 right-0 absolute mr-2 h-[2rem] sm:h-[3rem] md:h-[5rem] mb-[20px]"
           />
         </div>
       </div>
+      
       <div
-        className="border-t-2 whitespace-nowrap overflow-hidden"
+        className="my-6 border-t-2 whitespace-nowrap overflow-hidden"
         ref={scrollContainerRef}
       >
         <img

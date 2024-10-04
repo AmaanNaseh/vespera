@@ -8,7 +8,7 @@ const Footer = () => {
       <img src={FOOTER} alt="footer" className=""/>
       <div className="bottom-0 absolute flex flex-col items-center justify-center">
         <p className="text-xs sm:text-xl">
-          Made with <span>❤️</span> by the Vespera Team
+          Made with <span>🤍</span> by the Vespera Team
         </p>
         <p className="text-xs sm:text-xl">Copyright ©️ 2024 Vespera | IoSC x AWSCC</p>
       </div>

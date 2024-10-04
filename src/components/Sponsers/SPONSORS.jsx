@@ -5,16 +5,20 @@ import sponsor2 from "../../assets/Sponsers/sponser2.png";
 // SponsorSection Component
 function SponsorSection({ title, sponsors }) {
   return (
-    <div>
-      <div className="mt-20 mb-10 font-bold text-2xl text-left">{title}</div>
-      <div className="flex justify-between mb-20 w-4/5">
+    <div className="w-full">
+      <h2 className="mt-20 mb-10 font-bold text-2xl text-center">{title}</h2>
+      <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
         {sponsors.length > 0 ? (
           sponsors.map((sponsor, index) => (
             <div
-              className="flex flex-col items-center border-2 border-gray-800 bg-gray-800 shadow-lg mr-4 last:mr-0 p-8 w-1/2 text-left"
+              className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl"
               key={index}
             >
-              <img src={sponsor.img} alt={sponsor.name} className="mt-5 max-w-2/5" />
+              <img
+                src={sponsor.img}
+                alt={sponsor.name}
+                className="max-w-full h-auto object-contain"
+              />
             </div>
           ))
         ) : (
@@ -25,9 +29,16 @@ function SponsorSection({ title, sponsors }) {
   );
 }
 
+
 // Renamed Component to Sponsors
 function Sponsors() {
   const titleSponsors = [
+    { img: sponsor1, name: "Premier Energies" },
+    { img: sponsor2, name: "Emmvee Solar" },
+    { img: sponsor1, name: "Premier Energies" },
+    { img: sponsor2, name: "Emmvee Solar" },
+    { img: sponsor1, name: "Premier Energies" },
+    { img: sponsor2, name: "Emmvee Solar" },
     { img: sponsor1, name: "Premier Energies" },
     { img: sponsor2, name: "Emmvee Solar" },
   ];
@@ -42,9 +53,9 @@ function Sponsors() {
 
       {/* Centered Sponsors Section */}
       <div className="flex flex-col justify-start items-center w-full text-center">
-        <h1 className="relative mt-10 mb-20 w-full font-bold text-2xl">
+        <h1 className="relative mt-32 mb-20 w-full font-fogLighten text-5xl text-glow sm:text-6xl md:text-8xl">
           Sponsors
-          <span className="block bottom-0 left-0 absolute bg-gray-700 w-full h-0.5"></span>
+          <span className="block bottom-0 left-0 absolute bg-white w-full h-0.5"></span>
         </h1>
 
         {/* Title Sponsors */}

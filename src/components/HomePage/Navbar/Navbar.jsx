@@ -59,33 +59,36 @@ const Navbar = () => {
               menuOpen ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Link
-              to="/about"
+            <p
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               About
-            </Link>
+            </p>
             <Link
               to="/events"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Events
             </Link>
             <Link
               to="/speakers"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Speakers
             </Link>
-            <Link
-              to="/faq"
+            <p
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               FAQ
-            </Link>
+            </p>
             <Link
               to="/sponsers"
               className="hover:bg-gray-700 px-4 py-2 font-medium text-lg text-white transition-colors duration-200"
+              onClick={()=>setMenuOpen(!menuOpen)}
             >
               Sponsors
             </Link>
@@ -94,18 +97,18 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="md:flex justify-center items-center gap-8 hidden">
-          <Link to="/about" className="text-gray-400 text-lg hover:text-white">
+          <p className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
             About
-          </Link>
+          </p>
           <Link to="/events" className="text-gray-400 text-lg hover:text-white">
             Events
           </Link>
           <Link to="/speakers" className="text-gray-400 text-lg hover:text-white">
             Speakers
           </Link>
-          <Link to="/faq" className="text-gray-400 text-lg hover:text-white">
+          <p className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
             FAQ
-          </Link>
+          </p>
           <Link to="/sponsers" className="text-gray-400 text-lg hover:text-white">
             Sponsors
           </Link>
