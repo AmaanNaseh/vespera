@@ -85,7 +85,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className='bg-gray-400 w-full h-[0.2px] mt-[-40px] mb-[20px]'></div>
+      
       <div
         className="my-6 border-t-2 whitespace-nowrap overflow-hidden"
         ref={scrollContainerRef}
