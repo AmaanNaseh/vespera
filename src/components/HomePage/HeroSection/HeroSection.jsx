@@ -74,10 +74,10 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${BACK_HERO})` }}
       >
         <div className="relative">
-          <h1 className="font-fogLighten text-[4rem] text-glow sm:text-[6rem] md:text-[12rem]">
+          <h1 className="font-fogLighten text-[4rem] text-glow sm:text-[6rem] md:text-[11rem]">
             Vespera
           </h1>
-          <p className="font-fogLighten text-[2.5rem] text-center text-glow-date">25.10.2024 - 26.10.2024</p>
+          <p className="font-fogLighten text-[1.5rem] text-center text-glow-date sm:text-[2rem] md:text-[4rem]">25.10.2024 - 26.10.2024</p>
           <img
             src={STAR_2}
             alt="Star"
@@ -87,7 +87,7 @@ const HeroSection = () => {
       </div>
       <div className='bg-gray-400 w-full h-[0.2px] mt-[-40px] mb-[20px]'></div>
       <div
-        className="my-6border-t-2 whitespace-nowrap overflow-hidden"
+        className="my-6 border-t-2 whitespace-nowrap overflow-hidden"
         ref={scrollContainerRef}
       >
         <img

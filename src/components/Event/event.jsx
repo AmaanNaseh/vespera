@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import logo from '../../assets/Event/logo.png';
 import back from '../../assets/Event/back.png';
 import box from '../../assets/Event/box.png';
@@ -7,255 +7,56 @@ import people from '../../assets/Event/people.png';
 import background from './assets/background.png';
 
 function Event() {
+  const events = [
+    { title: 'HACKATHON', date: '25th Oct - 26th Oct', participants: '1-4 Participants', paragraph: 'Join the ultimate coding marathon.' },
+    { title: 'DESIGNATHON', date: '25th Oct - 26th Oct', participants: '1-3 Participants', paragraph: 'Create stunning designs in this creative challenge.' },
+    { title: 'CASE STUDY', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Analyze and present real-world case studies.' },
+    { title: 'PANEL DISCUSSION', date: '25th Oct', participants: 'Individual', paragraph: 'Engage in insightful discussions with experts.' },
+    { title: 'FILM MAKING', date: '25th Oct - 26th Oct', participants: '1-3 Participants', paragraph: 'Showcase your film-making talent.' },
+    { title: 'ROASTER BOASTER', date: '25th Oct', participants: '2 Participants', paragraph: 'Enjoy fun-filled roast and banter.' },
+    { title: 'TREASURE HUNT', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' }
+  ];
+
   return (
-    <div className='bg-black pb-[100px]' style={{backgroundImage:`url(${background})`, backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
-        <div className="relative title">
-        
+    <div className='bg-black'>
+      <div className="relative title">
         <img 
           src={back} 
           alt="Background" 
           className="absolute inset-0 opacity-50 pt-7 w-[200px] h-[200px] object-cover" 
           style={{ left: '50%', transform: 'translateX(-50%)' }} 
-        />      
-
+        />
         <p className="relative z-10 pt-20 font-fogLighten font-serif text-6xl text-center text-glow text-white sm:text-8xl md:text-10xl">
           Events
         </p>
       </div>
 
-      
-      <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-        <div className="flex sm:flex-row flex-col">
-    
-            <div className="sm:w-1/3">
-            <img src={box} alt="Left Section Image" className="rounded-lg sm:w-full sm:h-full h-[300px] object-cover" />
+      {/* Event Sections */}
+      {events.map((event, index) => (
+        <div key={index} className="bg-neutral-950 shadow-lg mx-auto mt-10 lg:mt-40 p-6 lg:p-10 rounded-lg max-w-5xl container">
+          <div className="flex lg:flex-row flex-col">
+            <div className="mb-6 lg:mb-0 w-full lg:w-1/3">
+              <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
             </div>
-
-
-            <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-            <h2 className="mt-6 mb-4 font-bold text-3xl text-white">HACKATHON</h2>
-            <p className="mb-6 sm:text-lg text-white">
-                This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-            </p>
-
-            <div className="flex items-center space-x-8">
-   
+            <div className="flex flex-col justify-center pl-0 lg:pl-10 w-full lg:w-2/3">
+              <h2 className="mb-4 font-bold text-2xl text-white md:text-3xl">{event.title}</h2>
+              <p className="mb-6 text-base text-white md:text-lg">{event.paragraph}</p>
+              <div className="flex items-center space-x-4 md:space-x-8">
                 <div className="flex items-center space-x-2">
-                <img src={calander} alt="Calendar" className="w-6 h-6" />
-                <span className="sm:text-lg text-xs text-white">25th Oct - 26th Oct</span>
+                  <img src={calander} alt="Calendar" className="w-5 md:w-6 h-5 md:h-6" />
+                  <span className="text-sm text-white md:text-lg">{event.date}</span>
                 </div>
-
-      
                 <div className="flex items-center space-x-2">
-                <img src={people} alt="Team" className="w-6 h-6" />
-                <span className="sm:text-lg text-xs text-white">1-4 Paricipants</span>
+                  <img src={people} alt="Team" className="w-5 md:w-6 h-5 md:h-6" />
+                  <span className="text-sm text-white md:text-lg">{event.participants}</span>
                 </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg sm:w-full sm:h-full h-[300px] object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">DESIGNATHON</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct - 26th Oct</span>
-                    </div>
-
-
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">1-3 Paricipants</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-        
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg sm:w-full sm:h-full h-[300px] object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">CASE STUDY</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-    
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct</span>
-                    </div>
-
-        
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">1-3 Paricipants</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-        
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">PANEL DISCUSSION</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-    
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct</span>
-                    </div>
-
-        
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">Individual</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-        
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">FILM MAKING</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-    
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct - 26th Oct</span>
-                    </div>
-
-        
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">1-3 Paricipants</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-        
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">ROASTER BOASTER</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-    
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct</span>
-                    </div>
-
-        
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">2 Participants</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="bg-neutral-950 bg-opacity-80 shadow-lg mx-auto mt-40 p-10 rounded-lg max-w-5xl container">
-
-            <div className="flex sm:flex-row flex-col">
-        
-                <div className="sm:w-1/3">
-                <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
-                </div>
-
-
-                <div className="flex flex-col justify-center sm:pl-10 sm:w-2/3">
-                <h2 className="mt-6 mb-4 font-bold text-3xl text-white">TREASURE HUNT</h2>
-                <p className="mb-6 sm:text-lg text-white">
-                    This is a sample paragraph inside a smaller container. The text is contained within the div and will not extend 
-                    outside of it. You can customize this text to be longer or shorter, but it will always fit within the right section.
-                </p>
-
-                <div className="flex items-center space-x-8">
-    
-                    <div className="flex items-center space-x-2">
-                    <img src={calander} alt="Calendar" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">25th Oct</span>
-                    </div>
-
-        
-                    <div className="flex items-center space-x-2">
-                    <img src={people} alt="Team" className="w-6 h-6" />
-                    <span className="sm:text-lg text-xs text-white">1-3 Participants</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Event
+export default Event;

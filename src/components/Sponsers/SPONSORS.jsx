@@ -53,7 +53,7 @@ function Sponsors() {
 
       {/* Centered Sponsors Section */}
       <div className="flex flex-col justify-start items-center w-full text-center">
-        <h1 className="relative mt-12 mb-20 w-full font-fogLighten text-4xl text-glow sm:text-6xl md:text-8xl">
+        <h1 className="relative mt-32 mb-20 w-full font-fogLighten text-5xl text-glow sm:text-6xl md:text-8xl">
           Sponsors
           <span className="block bottom-0 left-0 absolute bg-white w-full h-0.5"></span>
         </h1>

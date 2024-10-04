@@ -2,27 +2,27 @@ import React from 'react'
 import backgroundHeading from './assets/backgroundHeading.png'
 import backgroundspeakers from './assets/backgroundspeakers.png'
 import speakerBorder from './assets/speakerBorderDesign.png'
-import Speaker from './assets/speaker.png';
+import Speaker from './assets/speaker.jpeg';
 
 const speakersData=[
   {
     image:`${Speaker}`,
-    name:'Mr. Dean',
+    name:'Mr. Obama',
     description:'Sit viverra tincidunt pharetra sit ornare posuere sapien diam. Nisl orci ut scelerisque vitae. Integer pretium dignissim vel tortor interdum libero at netus.'
   },
   {
     image:`${Speaker}`,
-    name:'Mr. Dean',
+    name:'Mr. Obama',
     description:'Sit viverra tincidunt pharetra sit ornare posuere sapien diam. Nisl orci ut scelerisque vitae. Integer pretium dignissim vel tortor interdum libero at netus.'
   },
   {
     image:`${Speaker}`,
-    name:'Mr. Dean',
+    name:'Mr. Obama',
     description:'Sit viverra tincidunt pharetra sit ornare posuere sapien diam. Nisl orci ut scelerisque vitae. Integer pretium dignissim vel tortor interdum libero at netus.'
   },
   {
     image:`${Speaker}`,
-    name:'Mr. Dean',
+    name:'Mr. Obama',
     description:'Sit viverra tincidunt pharetra sit ornare posuere sapien diam. Nisl orci ut scelerisque vitae. Integer pretium dignissim vel tortor interdum libero at netus.'
   }
 ];
@@ -31,8 +31,8 @@ const speakersData=[
 
 function Speakers() {
   return (
-    <section className='flex flex-col items-center bg-black w-full h-[900px] sm:h-[1500px] md:h-[1600px] lg:h-[2100px] 2xl:h-[2400px] xl:h-[2400px]'>
-      <div className='flex justify-center items-center mt-[20px] sm:mt-[50px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${backgroundHeading})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
+    <section className='flex flex-col items-center bg-black w-full h-[1000px] sm:h-[1500px] md:h-[1600px] lg:h-[2100px] 2xl:h-[2400px] xl:h-[2400px]'>
+      <div className='flex justify-center items-center mt-[40px] sm:mt-[100px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${backgroundHeading})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
         <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Speakers</h1>
       </div>
       <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
