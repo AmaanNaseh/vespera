@@ -35,7 +35,7 @@ function Event() {
             Events
             </p>
         </div>
-        <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[0px] w-full h-[0.5px]'></div>
+        <div className='bg-gray-300 mt-[10px] sm:mt-[-70px] md:mt-[0px] w-full h-[0.5px] '></div>
 
         {/* Event Sections */}
         {events.map((event, index) => (
