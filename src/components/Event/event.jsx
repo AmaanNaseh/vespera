@@ -5,6 +5,7 @@ import box from '../../assets/Event/box.png';
 import calander from '../../assets/Event/calander.png';
 import people from '../../assets/Event/people.png';
 import background from './assets/background.png';
+import { useNavigate } from "react-router-dom";
 
 function Event() {
   const events = [
@@ -17,8 +18,10 @@ function Event() {
     { title: 'TREASURE HUNT', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' }
   ];
 
+  const navigate = useNavigate();
+
   return (
-    <div className='bg-black'>
+    <div className='bg-black' style={{backgroundImage:`url(${background})`, backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
       <div className="relative title">
         <img 
           src={back} 
@@ -33,7 +36,12 @@ function Event() {
 
       {/* Event Sections */}
       {events.map((event, index) => (
-        <div key={index} className="bg-neutral-950 shadow-lg mx-auto mt-10 lg:mt-40 p-6 lg:p-10 rounded-lg max-w-5xl container">
+        <div key={index} className="bg-neutral-950 bg-opacity-80  shadow-lg mx-auto mt-10 lg:mt-40 p-6 lg:p-10 rounded-lg max-w-5xl container"
+            onClick={() => {
+                if(event.title==='HACKATHON'){
+                    navigate("/hackathon");
+                }
+            }}>
           <div className="flex lg:flex-row flex-col">
             <div className="mb-6 lg:mb-0 w-full lg:w-1/3">
               <img src={box} alt="Left Section Image" className="rounded-lg w-full h-full object-cover" />
