@@ -1,11 +1,13 @@
 import React from 'react';
 import SPONSER1 from "../../../assets/HomePage/HeroSection/sponser1.png";
 import SPONSER2 from "../../../assets/HomePage/HeroSection/sponser2.png";
+import bg from './image.png';
 
 const Sponsers = () => {
   return (
     <div className='flex flex-col items-center w-full'>
       <h1 className='mb-8 font-bold text-2xl sm:text-3xl md:text-4xl'>SPONSERS</h1>
+      <img src={bg} alt="image" width={600} height={600} className="left-0 absolute z-0 mt-[-50px] "/>
 
       <div className='gap-4 grid grid-cols-1 sm:grid-cols-2'>
         <div className='flex justify-center items-center bg-[#141414] p-4 rounded-xl h-[200px]'>

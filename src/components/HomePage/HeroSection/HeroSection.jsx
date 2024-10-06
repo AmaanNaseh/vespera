@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import HERO_1X from "../../../assets/HomePage/HeroSection/hero1x.png";
 import BACK_HERO from "../../../assets/HomePage/HeroSection/back-hero.png";
-import STAR_2 from "../../../assets/HomePage/HeroSection/star-2.png";
+import STAR_2 from "../../../assets/HomePage/HeroSection/star-2-new.png";
 import CONSTELLATIONS from "../../../assets/HomePage/HeroSection/constellations.png";
 
 import "./HeroSection.css";
@@ -66,28 +66,31 @@ const HeroSection = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+  //background: rgba(24, 24, 24, 1);
+
 
   return (
     <div>
       <div
-        className="relative flex justify-center items-center bg-no-repeat bg-center w-full h-[592px] sm:h-[700px]"
-        style={{ backgroundImage: `url(${BACK_HERO})` }}
+        className="relative flex justify-center items-center bg-no-repeat bg-center mt-[-50px] w-full h-[402px] sm:h-[500px] sm:mt-[-20px] overflow-hidden"
+        style={{ backgroundImage: `url(${BACK_HERO})`, backgroundRepeat:'no-repeat', backgroundSize:'contain' }}
       >
         <div className="relative">
-          <h1 className="font-fogLighten text-[4rem] text-glow sm:text-[6rem] md:text-[11rem]">
+          <h1 className="font-fogLighten ml-[-20px] text-[3.5rem] text-glow sm:text-[6rem] 2xl:text-[170px] xl:text-[150px] lg:text[140px] md:text-[100px] sm:ml-[-50px] mt-[70px]">
             Vespera
           </h1>
-          <p className="font-fogLighten text-[1.5rem] text-center text-glow-date sm:text-[2rem] md:text-[4rem]">25.10.2024 - 26.10.2024</p>
+          <p className="font-fogLighten text-[1.5rem] text-center text-glow-date sm:text-[2rem] md:text-[3rem]">25.10.2024 - 26.10.2024</p>
           <img
+      
             src={STAR_2}
             alt="Star"
-            className="top-0 right-0 absolute mr-2 h-[2rem] sm:h-[3rem] md:h-[5rem] mb-[20px]"
+            className="sm:top-[-70px] sm:right-[-20px] top-[-30px] right-[20px] absolute mr-[-100px] h-[12rem] sm:h-[17rem] md:h-[20rem]"
           />
         </div>
       </div>
       
       <div
-        className="my-6 border-t-2 whitespace-nowrap overflow-hidden"
+        className=" relative my-6 border-t-2 sm:mt-[0px] mt-[-20px] whitespace-nowrap overflow-hidden"
         ref={scrollContainerRef}
       >
         <img
@@ -97,7 +100,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-around items-center bg-zinc-800 mx-auto p-4 rounded-lg w-full max-w-[700px] h-auto">
+      <div className="grid grid-cols-4 bg-zinc-800 mx-auto p-4 rounded-lg w-[90%] max-w-[700px] h-auto">
         {[
           { label: "Days", value: timeLeft.days },
           { label: "Hours", value: timeLeft.hours },
@@ -109,8 +112,8 @@ const HeroSection = () => {
             className="flex flex-col items-center p-2 transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 rounded-lg"
           >
             <svg
-              width="125"
-              height="126"
+              // width="125"
+              // height="126"
               viewBox="0 0 125 126"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
