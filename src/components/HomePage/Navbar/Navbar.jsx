@@ -69,40 +69,40 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
           <p
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
           >
             About
           </p>
           <Link
             to="/events"
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => setMenuOpen(false)}
           >
             Events
           </Link>
           <Link
             to="/speakers"
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => setMenuOpen(false)}
           >
             Speakers
           </Link>
           <p
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => { handleAboutClick("faqSection"); setMenuOpen(false); }}
           >
             FAQ
           </p>
           <Link
             to="/sponsers"
-            className="block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => setMenuOpen(false)}
           >
             Sponsors
@@ -111,23 +111,23 @@ const Navbar = () => {
       </div>
 
       {/* Desktop menu */}
-      <div className="md:flex justify-center items-center gap-16 hidden w-full">
+      <div className="font-fogLighten md:flex justify-center items-center gap-16 hidden w-full">
         <Link to="/" className="text-gray-400 text-lg hover:text-white">
           Home
         </Link>
         <p onClick={() => handleAboutClick('aboutSection')} className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
           About
         </p>
-        <Link to="/events" className="text-gray-400 text-lg hover:text-white">
+        <Link to="/events" className="font-fogLighten text-gray-400 text-lg hover:text-white">
           Events
         </Link>
-        <Link to="/speakers" className="text-gray-400 text-lg hover:text-white">
+        <Link to="/speakers" className="font-fogLighten text-gray-400 text-lg hover:text-white">
           Speakers
         </Link>
-        <p onClick={() => handleAboutClick('faqSection')} className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
+        <p onClick={() => handleAboutClick('faqSection')} className="font-fogLighten text-gray-400 text-lg hover:text-white hover:cursor-pointer">
           FAQ
         </p>
-        <Link to="/sponsers" className="text-gray-400 text-lg hover:text-white">
+        <Link to="/sponsers" className="font-fogLighten text-gray-400 text-lg hover:text-white">
           Sponsors
         </Link>
       </div>
