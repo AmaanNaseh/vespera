@@ -16,7 +16,8 @@ function Event() {
     { title: 'PANEL DISCUSSION', date: '25th Oct', participants: 'Individual', paragraph: 'Engage in insightful discussions with experts.' },
     { title: 'FILM MAKING', date: '25th Oct - 26th Oct', participants: '1-3 Participants', paragraph: 'Showcase your film-making talent.' },
     { title: 'ROASTER BOASTER', date: '25th Oct', participants: '2 Participants', paragraph: 'Enjoy fun-filled roast and banter.' },
-    { title: 'TREASURE HUNT', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' }
+    { title: 'TREASURE HUNT', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' },
+    { title: 'VIBRATO', date: '25th Oct', participants: '1-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' }
   ];
 
   const navigate = useNavigate();

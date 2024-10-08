@@ -13,7 +13,7 @@ export default {
         },
       },
       animation: {
-        rotateImage: 'rotate 10s linear infinite', // Adjust duration as needed
+        rotateImage: 'rotate 50s linear infinite', // Adjust duration as needed
       },
     },
     fontFamily: {
