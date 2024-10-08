@@ -3,12 +3,12 @@ import FOOTER from "../../../assets/HomePage/HeroSection/footer-background.png";
 
 const Footer = () => {
   return (
-    <footer className="relative flex justify-center items-center footer bg-black overflow-hidden h-[50vh]">
+    <footer className="relative flex justify-center items-center footer bg-black overflow-hidden sm:h-[50vh] h-[200px]">
       {/* Rotating Image */}
       <img
         src={FOOTER}
         alt="footer"
-        className="absolute 2xl:bottom-[-240%] bottom-[-70%] w-[100%] xl:bottom-[-170%] lg:bottom-[-170%] md:bottom-[-130%] md:w-[90%] sm:w-[50%] lg:w-[80%] h-auto animate-rotateImage"
+        className="absolute 2xl:bottom-[-240%] bottom-[-110%] w-[100%] xl:bottom-[-170%] lg:bottom-[-170%] md:bottom-[-130%] md:w-[90%] sm:w-[50%] lg:w-[80%] h-auto animate-rotateImage"
       />
       {/* Footer Text */}
       <div className="absolute bottom-[0] flex flex-col items-center justify-center">
