@@ -76,20 +76,12 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <div>
             <p
               className="inner-heading font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
               onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
             >
               About
             </p>
-            <p
-              className="inn font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
-              onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
-            >
-              About
-            </p>
-          </div>
           <Link
             to="/events"
             className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
