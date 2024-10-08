@@ -5,7 +5,7 @@ import Themes from './image/image.png'
 import VerticalBar from './image/vertical-bar.png'
 import Faq from './faq'
 
-const Hackathon = () => {
+function Hackathon() {
   return (
     <section className="bg-black text-white font-sans flex flex-col items-center w-full">
       
@@ -113,6 +113,6 @@ const Hackathon = () => {
       <Faq/>
     </section>
   );
-};
+}
 
 export default Hackathon;
