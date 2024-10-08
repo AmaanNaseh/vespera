@@ -13,7 +13,7 @@ function SponsorSection({ title, sponsors }) {
         {sponsors.length > 0 ? (
           sponsors.map((sponsor, index) => (
             <div
-              className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl md:w-[500px]"
+              className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl md:w-[500px]  h-[230px]"
               key={index}
             >
               <img
@@ -37,21 +37,26 @@ function Sponsors() {
   const titleSponsors = [
     { img: sponsor2, name: "Emmvee Solar" },
     { img: sponsor1, name: "Premier Energies" },
-    { img: sponsor2, name: "Emmvee Solar" },
   ];
 
-  const platinumSponsors = [];
-  const goldSponsors = [];
-  const silverSponsors = [];
+  const platinumSponsors = [
+    {}
+  ];
+  const goldSponsors = [
+    {}
+  ];
+  const silverSponsors = [
+    {}
+  ];
 
   return (
-    <section>
-      <div className="bg-black min-h-screen text-white App">
+    <section className="bg-black ">
+      <div className=" min-h-screen text-white App mb-10">
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
         {/* Centered Sponsors Section */}
         <div className="flex flex-col justify-start items-center w-full text-center">
-          <div className='flex justify-center items-center mt-[40px] sm:mt-[100px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
+          <div className='flex justify-center items-center mt-[6px] sm:mt-[40px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
             <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Sponsors</h1>
           </div>
           <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
@@ -66,7 +71,7 @@ function Sponsors() {
           <SponsorSection title="GOLD SPONSORS" sponsors={goldSponsors} />
 
           {/* Silver Sponsors */}
-          <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors} />
+          <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors}/>
         </div>
       </div>
       <Footer/>

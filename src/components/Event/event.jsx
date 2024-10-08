@@ -23,16 +23,16 @@ function Event() {
   const navigate = useNavigate();
 
   return (
-    <section className=' bg-black w-full'>
-        <div className=' flex flex-col items-center bg-black w-full' style={{backgroundImage:`url(${background})`, backgroundPosition:'center', backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
-          <div className='flex justify-center items-center mt-[40px] sm:mt-[100px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
+    <section className=' bg-black w-full overflow-hidden'>
+      <img src={background} alt='background' className='absolute top-[20px] w-full h-[4100px]'/>
+        <div className=' flex flex-col items-center bg-black w-full mt-[-30px] sm:mt-[-100px]'>
+          <div className='flex justify-center items-center mt-[40px] sm:mt-[140px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
             <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Events</h1>
           </div>
-        <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
-
+        <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] xl:mt-[-100px] mb-[70px] w-full h-[0.5px]'></div>
         {/* Event Sections */}
         {events.map((event, index) => (
-            <div key={index} className="bg-neutral-950 bg-opacity-80  shadow-lg mx-auto mt-10 lg:mt-40 p-6 lg:p-10 rounded-lg max-w-5xl container"
+            <div key={index} className="relative z-1 bg-neutral-950 bg-opacity-80  shadow-lg mx-auto mt-10 lg:mt-10 p-6 lg:p-10 rounded-lg max-w-5xl container"
                 onClick={() => {
                     if(event.title==='HACKATHON'){
                       navigate("/hackathon");
