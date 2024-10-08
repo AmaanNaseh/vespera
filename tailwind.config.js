@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        rotateImage: 'rotate 10s linear infinite', // Adjust duration as needed
+      },
     },
     fontFamily: {
       spaceGrotesk: ["Space Grotesk", "sans-serif"],

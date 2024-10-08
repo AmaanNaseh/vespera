@@ -12,6 +12,7 @@ import Event from "./components/Event/event";
 import Sponsors from "./components/Sponsers/SPONSORS";
 import Speakers from "./components/Speakers/speakers";
 import Hackathon from "./components/hackathon/hackathon";
+import Designathon from "./components/Designathon/designathon";
 
 const Router = createBrowserRouter([
   {
@@ -22,10 +23,6 @@ const Router = createBrowserRouter([
         path: "/",
         element: <HomePage />
       },
-      // {
-      //   path: "/about",
-      //   element: <h1>About</h1>
-      // },
       {
         path: "/events",
         element: <Event />
@@ -34,10 +31,6 @@ const Router = createBrowserRouter([
         path: "/speakers",
         element: <Speakers />
       },
-      // {
-      //   path: "/faq",
-      //   element: <h1>Faq</h1>
-      // },
       {
         path: "/sponsers",
         element: <Sponsors />
@@ -45,6 +38,10 @@ const Router = createBrowserRouter([
       {
         path:"/hackathon",
         element:<Hackathon/>
+      },
+      {
+        path:"/designathon",
+        element:<Designathon/>
       }
     ]
   }

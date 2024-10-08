@@ -1,0 +1,16 @@
+.inner-headings span:hover{
+    position: relative;
+    animation:animation 0.3s ease;
+    cursor:pointer;
+    color:white;
+}
+
+@keyframes animation {
+    0%,100%{
+        top:0;
+    }
+    95%{
+        top: -50px;
+    }
+
+}
