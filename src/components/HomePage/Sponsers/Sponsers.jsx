@@ -5,16 +5,16 @@ import bg from './image.png';
 
 const Sponsers = () => {
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className='flex flex-col items-center w-ful mt-[100px]'>
       <h1 className='mb-8 font-bold text-2xl sm:text-3xl md:text-4xl'>SPONSERS</h1>
       <img src={bg} alt="image" width={600} height={600} className="left-0 absolute z-0 mt-[-50px] "/>
 
       <div className='flex flex-col items-center gap-4 sm:grid sm:grid-cols-2'>
         <div className='flex justify-center items-center bg-[#141414] p-4 rounded-xl sm:h-[200px] w-[90%] sm:w-full'>
-            <img src={SPONSER1} alt="Sponsor 1" className="max-w-full h-auto" />
+            <img src={SPONSER2} alt="Sponsor 1" className="max-w-full h-auto" />
         </div>
         <div className='flex justify-center items-center bg-[#141414] p-4 rounded-xl sm:h-[200px] w-[90%] sm:w-full'>
-            <img src={SPONSER2} alt="Sponsor 2" className="max-w-full h-auto" />
+            <img src={SPONSER1} alt="Sponsor 2" className="max-w-full h-auto" />
         </div>
       </div>
 
