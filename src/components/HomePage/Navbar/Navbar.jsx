@@ -3,6 +3,8 @@ import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 
+import './Navbar.css';
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,17 +71,25 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+            className="font-fogLighten block hover:bg-gray-700 flip px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
             onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
-          <p
-            className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
-            onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
-          >
-            About
-          </p>
+          <div>
+            <p
+              className="inner-heading font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+              onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
+            >
+              About
+            </p>
+            <p
+              className="inn font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
+              onClick={() => { handleAboutClick("aboutSection"); setMenuOpen(false); }}
+            >
+              About
+            </p>
+          </div>
           <Link
             to="/events"
             className="font-fogLighten block hover:bg-gray-700 px-4 py-2 font-medium text-lg text-start text-white transition-colors duration-200"
@@ -111,25 +121,101 @@ const Navbar = () => {
       </div>
 
       {/* Desktop menu */}
-      <div className="font-fogLighten md:flex justify-center items-center gap-16 hidden w-full">
-        <Link to="/" className="text-gray-400 text-lg hover:text-white">
+      <div className="font-fogLighten md:flex justify-center items-center gap-12 hidden w-full">
+        {/* <Link to="/" className="text-gray-400 text-lg hover:text-white">
           Home
-        </Link>
-        <p onClick={() => handleAboutClick('aboutSection')} className="text-gray-400 text-lg hover:text-white hover:cursor-pointer">
-          About
-        </p>
-        <Link to="/events" className="font-fogLighten text-gray-400 text-lg hover:text-white">
-          Events
-        </Link>
-        <Link to="/speakers" className="font-fogLighten text-gray-400 text-lg hover:text-white">
-          Speakers
-        </Link>
-        <p onClick={() => handleAboutClick('faqSection')} className="font-fogLighten text-gray-400 text-lg hover:text-white hover:cursor-pointer">
+        </Link> */}
+        <div className="inner-headings h-[40px] overflow-hidden transition-none px-4">
+            <span>
+              <Link to="/"
+                className="font-fogLighten text-gray-400 block py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Home
+              </Link>
+              <Link to="/"
+                className="font-fogLighten block text-gray-400  py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Home
+              </Link>
+            </span>
+          </div>
+        <div className="inner-headings h-[40px] overflow-hidden transition-none">
+            <span>
+              <Link
+                className="font-fogLighten text-gray-400 block hover:pointer py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+                onClick={() => { handleAboutClick("aboutSection")}}
+              >
+                About
+              </Link>
+              <Link
+                className="font-fogLighten block text-gray-400 py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+                onClick={() => { handleAboutClick("aboutSection")}}
+              >
+                About
+              </Link>
+            </span>
+          </div>
+        <div className="inner-headings h-[40px] overflow-hidden transition-none px-4">
+            <span>
+              <Link to="/events"
+                className="font-fogLighten text-gray-400 block py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Events
+              </Link>
+              <Link to="/events"
+                className="font-fogLighten block text-gray-400  py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Events
+              </Link>
+            </span>
+          </div>
+        <div className="inner-headings h-[40px] overflow-hidden transition-none px-4">
+            <span>
+              <Link to="/speakers"
+                className="font-fogLighten text-gray-400 block py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Speakers
+              </Link>
+              <Link to="/speakers"
+                className="font-fogLighten block text-gray-400  py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Speakers
+              </Link>
+            </span>
+          </div>
+        {/* <p onClick={() => handleAboutClick('faqSection')} className="font-fogLighten text-gray-400 text-lg hover:text-white hover:cursor-pointer">
           FAQ
-        </p>
-        <Link to="/sponsers" className="font-fogLighten text-gray-400 text-lg hover:text-white">
-          Sponsors
-        </Link>
+        </p> */}
+        <div className="inner-headings h-[40px] overflow-hidden transition-none px-4">
+            <span>
+              <Link
+                className="font-fogLighten text-gray-400 block py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+                onClick={() => { handleAboutClick("faqSection")}}
+              >
+                FAQ
+              </Link>
+              <Link
+                className="font-fogLighten block text-gray-400  py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+                onClick={() => handleAboutClick('faqSection')} 
+              >
+                FAQ
+              </Link>
+            </span>
+          </div>
+        <div className="inner-headings h-[40px] overflow-hidden transition-none px-4">
+            <span>
+              <Link  to="/sponsers"
+                className="font-fogLighten text-gray-400 block py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Sponsors
+              </Link>
+              <Link  to="/sponsers"
+                className="font-fogLighten block text-gray-400  py-2 font-medium text-lg text-start hover:text-white transition-colors duration-200"
+              >
+                Sponsors
+              </Link>
+            </span>
+          </div>
       </div>
     </div>
   );

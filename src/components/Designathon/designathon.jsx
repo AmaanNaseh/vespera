@@ -5,13 +5,13 @@ import Themes from './image/image.png'
 import VerticalBar from './image/vertical-bar.png'
 import Faq from './faq'
 
-const Hackathon = () => {
+const Designathon = () => {
   return (
     <section className="bg-black text-white font-sans flex flex-col items-center w-full">
       
         {/* <h1 className="text-6xl font-bold">Hackathon</h1> */}
         <div className='flex justify-center items-center mt-[40px] sm:mt-[100px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${backgroundHeading})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
-          <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Hackathon</h1>
+          <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Designathon</h1>
         </div>
       <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
 
@@ -115,4 +115,4 @@ const Hackathon = () => {
   );
 };
 
-export default Hackathon;
+export default Designathon;
