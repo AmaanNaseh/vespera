@@ -50,8 +50,8 @@ function Sponsors() {
   ];
 
   return (
-    <section>
-      <div className="bg-black min-h-screen text-white App">
+    <section className="bg-black ">
+      <div className=" min-h-screen text-white App mb-10">
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
         {/* Centered Sponsors Section */}
