@@ -27,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>  
-      <div className="relative z-10 flex-1 bg-[#141414] p-4 md:p-8 rounded-tl-xl rounded-bl-xl w-full lg:w-1/3">
+      <div className="relative z-10 flex-1 bg-[#141414] p-4 md:p-8 rounded-tl-xl rounded-bl-xl w-[90%] lg:w-1/3">
         <h2 className="mb-4 text-2xl text-white md:text-3xl">About</h2>
         <p className="text-sm text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
