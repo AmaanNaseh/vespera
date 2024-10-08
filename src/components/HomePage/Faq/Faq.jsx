@@ -12,7 +12,7 @@ function Faq() {
   };
 
   return (
-    <div className="relative z-10 flex flex-col items-center px-4 sm:px-6 lg:px-8 mt-[50px] mb-[100px]">
+    <div className="relative z-10 flex flex-col items-center px-4 sm:px-6 lg:px-8 mt-[30px] mb-[100px]">
       <h1 className="my-8 sm:mb-16 font-bold text-2xl text-white sm:text-3xl md:text-4xl sm:mt-[70px]">
         FAQ
       </h1>

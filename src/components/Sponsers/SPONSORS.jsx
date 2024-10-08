@@ -71,7 +71,7 @@ function Sponsors() {
           <SponsorSection title="GOLD SPONSORS" sponsors={goldSponsors} />
 
           {/* Silver Sponsors */}
-          <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors} />
+          <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors}/>
         </div>
       </div>
       <Footer/>
