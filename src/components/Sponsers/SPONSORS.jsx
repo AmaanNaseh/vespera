@@ -24,7 +24,7 @@ function SponsorSection({ title, sponsors }) {
             </div>
           ))
         ) : (
-          <p>No sponsors available for this category</p>
+          <p>Will be reveled soon...</p>
         )}
       </div>
     </div>
@@ -35,6 +35,7 @@ function SponsorSection({ title, sponsors }) {
 // Renamed Component to Sponsors
 function Sponsors() {
   const titleSponsors = [
+    { img: sponsor2, name: "Emmvee Solar" },
     { img: sponsor1, name: "Premier Energies" },
     { img: sponsor2, name: "Emmvee Solar" },
   ];
