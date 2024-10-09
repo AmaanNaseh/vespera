@@ -12,28 +12,34 @@ function Faq() {
   };
 
   return (
-    <div className="relative z-10 flex flex-col items-center px-4 sm:px-6 lg:px-8 mt-[30px] mb-[100px]">
-      <h1 className="my-8 sm:mb-16 font-bold text-2xl text-white sm:text-3xl md:text-4xl sm:mt-[70px]">
-        FAQ
+    <div className="relative z-10 flex flex-col items-center px-4 sm:px-6 lg:px-8 mb-[100px]">
+      <h1 className="my-8 sm:mb-16 font-bold text-xl text-white sm:text-3xl md:text-4xl sm:mt-[70px]">
+        You got some Qs, We have the As 
       </h1>
 
       <Accordion
-        question="Hendrerit pellentesque vulputate nascetur senectus enim."
-        answer="Congue urna sed ultricies eros commodo ac sagittis elementum. Odio eget aliquet ac morbi. Dapibus sit arcu scelerisque amet. Eros risus ac consequat viverra habitasse. Proin non vitae vitae est. Tincidunt risus purus malesuada tortor id ac hendrerit ullamcorper. Condimentum proin mauris donec id duis nulla egestas molestie. Feugiat euismod amet nec id pretium. Amet mi gravida blandit malesuada porttitor sed."
+        question="Are there goodies?"
+        answer="Absolutely! What's a fest without swag? Get ready for cool T-shirts, stickers, and mystery goodies. "
         isOpen={openIndex === 0}
         onClick={() => toggleAccordion(0)}
       />
       <Accordion
-        question="Hendrerit pellentesque vulputate nascetur senectus enim."
-        answer="Congue urna sed ultricies eros commodo ac sagittis elementum. Odio eget aliquet ac morbi. Dapibus sit arcu scelerisque amet. Eros risus ac consequat viverra habitasse. Proin non vitae vitae est. Tincidunt risus purus malesuada tortor id ac hendrerit ullamcorper. Condimentum proin mauris donec id duis nulla egestas molestie. Feugiat euismod amet nec id pretium. Amet mi gravida blandit malesuada porttitor sed."
+        question="Can I attend only for fun?"
+        answer="Totally! While the events are both tech and non-tech, we welcome spectators too. Enjoy the tech magic, grab some food, and cheer on your friends."
         isOpen={openIndex === 1}
         onClick={() => toggleAccordion(1)}
       />
       <Accordion
-        question="Hendrerit pellentesque vulputate nascetur senectus enim."
-        answer="Congue urna sed ultricies eros commodo ac sagittis elementum. Odio eget aliquet ac morbi. Dapibus sit arcu scelerisque amet. Eros risus ac consequat viverra habitasse. Proin non vitae vitae est. Tincidunt risus purus malesuada tortor id ac hendrerit ullamcorper. Condimentum proin mauris donec id duis nulla egestas molestie. Feugiat euismod amet nec id pretium. Amet mi gravida blandit malesuada porttitor sed."
+        question="How do I sign up for events?"
+        answer="Head over to this registration portal itself , or catch one of our event volunteers zooming around campus for a quick sign-up!"
         isOpen={openIndex === 2}
         onClick={() => toggleAccordion(2)}
+      />
+      <Accordion
+        question="Can I take part in multiple events?"
+        answer="Yes, you’re free to hop across galaxies (events) and show your brilliance in as many as you want!"
+        isOpen={openIndex === 3}
+        onClick={() => toggleAccordion(3)}
       />
     </div>
   );

@@ -13,6 +13,7 @@ import Sponsors from "./components/Sponsers/SPONSORS";
 import Speakers from "./components/Speakers/speakers";
 import Hackathon from "./components/hackathon/hackathon";
 import Designathon from "./components/Designathon/designathon";
+import CaseStudy from "./components/CaseStudy/CaseStudy";
 
 const Router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const Router = createBrowserRouter([
       {
         path:"/designathon",
         element:<Designathon/>
+      },
+      {
+        path:"/caseStudy",
+        element:<CaseStudy/>
       }
     ]
   }
