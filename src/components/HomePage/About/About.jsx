@@ -18,7 +18,7 @@ const About = () => {
           </div>
 
           <div className="group flex flex-col justify-center items-center bg-white mt-4 rounded-full sm:w-32 sm:h-32 w-20 h-20 text-black self-end sm:self-auto sm:mt-[-300px] custom-hover">
-            <h2 className="font-bold text-2xl md:text-3xl group-hover:text-white">₹ 3L+</h2>
+            <h2 className="font-bold text-2xl md:text-3xl group-hover:text-white">₹ 7L+</h2>
             <p className="text-sm md:text-base group-hover:text-white">prizes</p>
           </div>
           <div className="group flex flex-col justify-center items-center bg-white mt-4 rounded-full sm:w-32 sm:h-32 w-20 h-20 text-black self-start sm:self-auto sm:mt-20 custom-hover">
@@ -30,18 +30,11 @@ const About = () => {
       <div className="relative z-10 flex-1 bg-[#141414] p-4 md:p-8 rounded-tl-xl rounded-bl-xl w-[90%] lg:w-1/3">
         <h2 className="mb-4 text-2xl text-white md:text-3xl">About</h2>
         <p className="text-sm text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-          odio vero delectus, ut laudantium a exercitationem soluta consequuntur
-          cupiditate asperiores quos. Ad ipsa fugit perferendis voluptatibus
-          architecto rerum officia illo tenetur doloribus blanditiis deserunt
-          est suscipit molestiae sequi impedit hic distinctio reprehenderit
-          explicabo exercitationem recusandae totam, quod accusantium eos at?
-          Alias iure corporis atque quod, delectus enim, dolor, soluta
-          blanditiis doloribus aspernatur magni facere saepe! Mollitia debitis
-          nobis vero ipsam enim voluptatum eligendi, aliquid dolorum quos quo
-          eos porro labore fugiat odit perferendis quia veniam quibusdam
-          quisquam, numquam nesciunt sequi nemo nulla. Inventore voluptates
-          autem ut modi, aut eligendi voluptate.
+          VESPERA, the biggest techno-management fest of GGSIPU EDC, hosted by the dynamic IoSC and AWS Cloud Club, 
+          is here! This is where the brightest talents from diverse fields unite to compete for huge cash prizes and 
+          amazing goodies! Dive into a thrilling mix of technical and cultural extravaganzas. Whether you're a tech genius 
+          or a creative soul, there's something for everyone! Get ready for an electrifying fest packed with fun, frolic, 
+          and endless opportunities to shine like the stars. Don't miss out on this cosmic adventure!
         </p>
       </div>
     </div>

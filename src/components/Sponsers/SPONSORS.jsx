@@ -1,13 +1,16 @@
 import React from "react";
 import sponsor1 from "../../assets/Sponsers/sponser1.png";
 import sponsor2 from "../../assets/Sponsers/sponser2.png";
+import hackathonSponsor1 from "../../assets/Sponsers/hackathon_sponsor1.png";
+import hackathonSponsor2 from "../../assets/Sponsers/hackathon_sponsor2.png";
+import hackathonSponsor3 from "../../assets/Sponsers/hackathon_sponsor3.png";
 import back from "./assets/back.png";
 import Footer from "../HomePage/Footer/Footer";
 
 // SponsorSection Component
 function SponsorSection({ title, sponsors }) {
   return (
-    <div className="w-full" >
+    <div className="w-full">
       <h2 className="mt-20 mb-10 font-bold text-2xl text-center">{title}</h2>
       <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 md:flex md:flex-row md:justify-center">
         {sponsors.length > 0 ? (
@@ -31,7 +34,6 @@ function SponsorSection({ title, sponsors }) {
   );
 }
 
-
 // Renamed Component to Sponsors
 function Sponsors() {
   const titleSponsors = [
@@ -39,14 +41,13 @@ function Sponsors() {
     { img: sponsor1, name: "Premier Energies" },
   ];
 
-  const platinumSponsors = [
-    {}
-  ];
-  const goldSponsors = [
-    {}
-  ];
-  const silverSponsors = [
-    {}
+  const platinumSponsors = [{}];
+  const goldSponsors = [{}];
+  // const silverSponsors = [{}];
+  const hackathonSponsors = [
+    { img: hackathonSponsor1, name: "Devfolio" },
+    { img: hackathonSponsor2, name: "Polygon" },
+    { img: hackathonSponsor3, name: "EthIndia" },
   ];
 
   return (
@@ -56,25 +57,42 @@ function Sponsors() {
 
         {/* Centered Sponsors Section */}
         <div className="flex flex-col justify-start items-center w-full text-center">
-          <div className='flex justify-center items-center mt-[6px] sm:mt-[40px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]' style={{backgroundImage:`url(${back})`, backgroundSize:'contain', backgroundRepeat:'no-repeat', backgroundPosition:"center"}}>
-            <h1 className='font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl'>Sponsors</h1>
+          <div
+            className="flex justify-center items-center mt-[6px] sm:mt-[40px] w-[60%] sm:w-[40%] md:w-[50%] h-[250px] sm:h-[250px] md:h-[300px]"
+            style={{
+              backgroundImage: `url(${back})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+          >
+            <h1 className="font-fogLighten text-5xl text-glow text-white sm:text-8xl md:text-8xl">
+              Sponsors
+            </h1>
           </div>
-          <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
+          <div className="bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]"></div>
 
           {/* Title Sponsors */}
           <SponsorSection title="TITLE SPONSORS" sponsors={titleSponsors} />
 
           {/* Platinum Sponsors */}
-          <SponsorSection title="PLATINUM SPONSORS" sponsors={platinumSponsors} />
+          <SponsorSection
+            title="PLATINUM SPONSORS"
+            sponsors={platinumSponsors}
+          />
 
           {/* Gold Sponsors */}
           <SponsorSection title="GOLD SPONSORS" sponsors={goldSponsors} />
 
           {/* Silver Sponsors */}
-          <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors}/>
+          {/* <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors} /> */}
+          <SponsorSection
+            title="HACKATHON SPONSORS"
+            sponsors={hackathonSponsors}
+          />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 }
