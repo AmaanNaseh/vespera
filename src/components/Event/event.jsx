@@ -14,9 +14,9 @@ function Event() {
     { title: 'VesDes', date: '25th Oct - 26th Oct', participants: '2-3 Participants', paragraph: 'Create stunning designs in this creative challenge.' },
     { title: 'VesCase', date: '25th Oct', participants: '2-3 Participants', paragraph: 'Analyze and present real-world case studies.' },
     { title: 'PANEL DISCUSSION', date: '25th Oct', participants: 'Individual', paragraph: 'Engage in insightful discussions with experts.' },
-    { title: 'FILM MAKING', date: '25th Oct - 26th Oct', participants: '2-3 Participants', paragraph: 'Showcase your film-making talent.' },
-    { title: 'ROASTER BOASTER', date: '25th Oct', participants: '2 Participants', paragraph: 'Enjoy fun-filled roast and banter.' },
-    { title: 'TREASURE HUNT', date: '26th Oct', participants: '2-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' },
+    { title: 'VesLens', date: '25th Oct - 26th Oct', participants: '2-3 Participants', paragraph: 'Showcase your film-making talent.' },
+    { title: 'VesBurn', date: '25th Oct', participants: '2 Participants', paragraph: 'Enjoy fun-filled roast and banter.' },
+    { title: 'VesHunt', date: '26th Oct', participants: '2-3 Participants', paragraph: 'Embark on an exciting treasure hunt.' },
     { title: 'VIBRATO', date: '26th Oct', participants: 'Individual', paragraph: 'An unforgettable evening of music, dance, stand-up comedy, and dynamic performances.' }
   ];
 
@@ -42,6 +42,15 @@ function Event() {
                     }
                     if(event.title==='VesCase'){
                       navigate("/caseStudy");
+                    }
+                    if(event.title==='VesLens'){
+                      navigate("/filmMaking");
+                    }
+                    if(event.title==='VesBurn'){
+                      navigate("/roasterBoaster");
+                    }
+                    if(event.title==='VesHunt'){
+                      navigate("/treasureHunt");
                     }
                 }}>
             <div className="flex lg:flex-row flex-col">

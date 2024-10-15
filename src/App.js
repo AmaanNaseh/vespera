@@ -14,6 +14,9 @@ import Speakers from "./components/Speakers/speakers";
 import Hackathon from "./components/hackathon/hackathon";
 import Designathon from "./components/Designathon/designathon";
 import CaseStudy from "./components/CaseStudy/CaseStudy";
+import FilmMaking from "./components/FilmMaking/FilmMaking";
+import RoasterBoaster from "./components/RoasterBoster/RoasterBoaster";
+import TreasureHunt from "./components/TressureHunt/TressureHunt";
 
 const Router = createBrowserRouter([
   {
@@ -47,6 +50,18 @@ const Router = createBrowserRouter([
       {
         path:"/caseStudy",
         element:<CaseStudy/>
+      },
+      {
+        path:"/filmMaking",
+        element:<FilmMaking/>
+      },
+      {
+        path:"/roasterBoaster",
+        element:<RoasterBoaster/>
+      },
+      {
+        path:"/treasureHunt",
+        element:<TreasureHunt/>
       }
     ]
   }
