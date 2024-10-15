@@ -18,6 +18,14 @@ function SponsorSection({ title, sponsors }) {
             <div
               className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl md:w-[500px]  h-[230px]"
               key={index}
+              onClick={()=>{
+                if(sponsor.name==="Emmvee Solar"){
+                  window.open("https://emmvee.com/")
+                }
+                if(sponsor.name==="Premier Energies"){
+                  window.open("https://premierenergies.com/")
+                }
+              }}
             >
               <img
                 src={sponsor.img}
