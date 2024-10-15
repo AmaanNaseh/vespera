@@ -20,12 +20,11 @@ const TreasureHunt = () => {
       <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'cover'}}></div>
       <div className='w-[80%] text-center'>
       <p className="mt-20 text-sm md:text-lg text-gray-300 mx-auto">
-        VesLens is the Film Making Competition, happening as part of Vespera'24 in collaboration with IoSC and AWSCC (AWS Cloud Club) at GGSIPU EDC. This dynamic 
-        2-day event invites creative minds from various backgrounds to showcase their storytelling abilities by creating short films that address specific themes.
-        With the backing of AWSCC and IoSC, the Film Making Challenge creates a vibrant, innovation-driven atmosphere where fresh ideas thrive. Showcase your filmmaking 
-        talents, collaborate with fellow creatives, and stand a chance to win exciting prizes. Open to everyone from film beginners to seasoned pros, it’s an opportunity
-        to unleash your creativity, network with like-minded individuals, and have a fantastic experience. Get ready to dive into the world of cinema at the 
-        "VesLens - Film Making Competition", where imagination meets acting during Vespera 2024!
+      Get ready for an exhilarating adventure where teams will embark on a thrilling treasure hunt filled with clues, challenges, and excitement. This isn’t just 
+      about finding hidden gems; it’s about teamwork, strategy, and a race against the clock!
+      Join us for VesHunt: Treasure Hunt, where teams will dive into a world of clues and puzzles! Participants will challenge themselves to solve a series 
+      of clues that will lead them to the location of a hidden treasure on campus. The treasure will contain a grand prize, revealed to the winning team upon discovery. 
+      It’s a race against time as you uncover hidden gems and prove your team’s skills. Bring your A-game, gather your friends, and let the adventure begin!
         </p>
       </div>
         <button className="mt-10 text-black px-6 py-2 rounded" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}
@@ -37,7 +36,7 @@ const TreasureHunt = () => {
         <div className='xl:w-[50%] w-[80%] text-center mt-[100px]'>
           <h2 className="lg:text-[45px] text-[35px]  font-bold">Exciting Prizes and Rewards Await!</h2>
           <p>
-            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the Designathon.
+            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the  Treasure Hunt.
           </p>
         </div>
         <div className="xl:w-[60%] sm:w-[90%] w-[95%]  grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -51,24 +50,9 @@ const TreasureHunt = () => {
                 
                 {/* Right side content */}
                 <div className="text-3xl font-bold">
-                  ₹ 10,000
+                  ₹ 2,000
                 </div>
               </div>
-
-              <div className="bg-gray-800 p-6 rounded-lg md:col-span-2 flex justify-between items-center" style={{ backgroundColor: 'rgba(45, 45, 45, 1)', color: 'white' }}>
-                {/* Left side content */}
-                <div className='text-left'>
-                  <h3 className="text-2xl font-bold">Second Prize</h3>
-                  <p className="mt-2 text-gray-400 w-[170px] sm:w-[250px]">The next best is still a winner</p>
-                </div>
-                
-                {/* Right side content */}
-                <div className="text-3xl font-bold">
-                  ₹ 7,000
-                </div>
-              </div>
-
-          
             </div>
 
 
@@ -76,9 +60,11 @@ const TreasureHunt = () => {
       <section className="text-center mt-[100px] ">
         <h2 className="text-3xl font-bold text-[45px]">Themes</h2>
         <p className="mt-4 text-gray-400 max-w-5xl mx-auto">
-        In the final round, Films should explore any theme related to Vespera'24 and must be shot on campus. This round offers a great opportunity to network with fellow participants and industry professionals.
-        Prizes will be awarded for the most outstanding projects, so be prepared to showcase your best work!
-        Get ready to impress the judges and take your ideas to the next level at the Final Round!
+        VesHunt features a dynamic format where teams will compete to uncover clues leading to a hidden treasure on campus.
+        Teams will receive their first clue to kick off the hunt and must work together to solve each puzzle and find the next location.
+        The clock is ticking as teams race to complete all challenges and be the first to reach the treasure.
+        Points will be awarded based on speed and accuracy, with the top team claiming the grand prize hidden within the treasure.
+        The event promises thrills, teamwork, and a fun-filled adventure for all participants!
         </p>
       </section>
 

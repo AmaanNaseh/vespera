@@ -20,12 +20,10 @@ const RoasterBoaster = () => {
       <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'cover'}}></div>
       <div className='w-[80%] text-center'>
       <p className="mt-20 text-sm md:text-lg text-gray-300 mx-auto">
-        VesLens is the Film Making Competition, happening as part of Vespera'24 in collaboration with IoSC and AWSCC (AWS Cloud Club) at GGSIPU EDC. This dynamic 
-        2-day event invites creative minds from various backgrounds to showcase their storytelling abilities by creating short films that address specific themes.
-        With the backing of AWSCC and IoSC, the Film Making Challenge creates a vibrant, innovation-driven atmosphere where fresh ideas thrive. Showcase your filmmaking 
-        talents, collaborate with fellow creatives, and stand a chance to win exciting prizes. Open to everyone from film beginners to seasoned pros, it’s an opportunity
-        to unleash your creativity, network with like-minded individuals, and have a fantastic experience. Get ready to dive into the world of cinema at the 
-        "VesLens - Film Making Competition", where imagination meets acting during Vespera 2024!
+      Get ready for the ultimate showdown where humor meets competition in an electrifying roast battle! This isn’t just any ordinary event; it’s a chance for teams of two to step into the spotlight and face off against each other, all in the name of fun and creativity.
+      Here’s how it works: each team is assigned a pair of rival companies. Armed with clever facts and witty comebacks, they’ll roast their opponent’s brand while showcasing the strengths and successes of their own. It’s a battle of brains and banter, where sharp tongues and quick thinking reign supreme!
+      Expect a lively atmosphere filled with laughter, clever jabs, and a whole lot of brand pride. Whether you’re a participant or a spectator, you’ll be entertained by the banter and amazed by the creativity on display. Who will deliver the ultimate burn and earn bragging rights?
+      So, gather your friends, bring your A-game, and join us for a night where roasting rivals and boasting about your brand is all part of the fun! Let’s see who can roast to win and boast to shine!
         </p>
       </div>
         <button className="mt-10 text-black px-6 py-2 rounded" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}
@@ -37,7 +35,7 @@ const RoasterBoaster = () => {
         <div className='xl:w-[50%] w-[80%] text-center mt-[100px]'>
           <h2 className="lg:text-[45px] text-[35px]  font-bold">Exciting Prizes and Rewards Await!</h2>
           <p>
-            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the Designathon.
+            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the Roaster Boaster.
           </p>
         </div>
         <div className="xl:w-[60%] sm:w-[90%] w-[95%]  grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -51,7 +49,7 @@ const RoasterBoaster = () => {
                 
                 {/* Right side content */}
                 <div className="text-3xl font-bold">
-                  ₹ 10,000
+                  ₹ 2,000
                 </div>
               </div>
 
@@ -64,7 +62,7 @@ const RoasterBoaster = () => {
                 
                 {/* Right side content */}
                 <div className="text-3xl font-bold">
-                  ₹ 7,000
+                  ₹ 1,000
                 </div>
               </div>
 
@@ -76,9 +74,11 @@ const RoasterBoaster = () => {
       <section className="text-center mt-[100px] ">
         <h2 className="text-3xl font-bold text-[45px]">Themes</h2>
         <p className="mt-4 text-gray-400 max-w-5xl mx-auto">
-        In the final round, Films should explore any theme related to Vespera'24 and must be shot on campus. This round offers a great opportunity to network with fellow participants and industry professionals.
-        Prizes will be awarded for the most outstanding projects, so be prepared to showcase your best work!
-        Get ready to impress the judges and take your ideas to the next level at the Final Round!
+        Vesburn follows an electrifying knockout format where many teams of two will face off in a series of roasting rounds.
+        Each matchup will see teams delivering their best roasts and boasting about their own company in a set time.
+        The judging will focus on content, delivery, and creativity, with the winning team advancing to the next round while the losing team is eliminated.
+        This continues through quarterfinals and semifinals, culminating in a grand finale showdown for the championship title.
+        Audience participation will add excitement as they cheer for their favorites, ensuring a night filled with laughter, creativity, and friendly competition!  
         </p>
       </section>
 

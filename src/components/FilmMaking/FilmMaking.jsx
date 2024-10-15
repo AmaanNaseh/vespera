@@ -37,7 +37,7 @@ const FilmMaking = () => {
         <div className='xl:w-[50%] w-[80%] text-center mt-[100px]'>
           <h2 className="lg:text-[45px] text-[35px]  font-bold">Exciting Prizes and Rewards Await!</h2>
           <p>
-            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the Designathon.
+            Explore a variety of chances to demonstrate your skills, solve intriguing challenges, and win exciting prizes during the Film Making.
           </p>
         </div>
         <div className="xl:w-[60%] sm:w-[90%] w-[95%]  grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
