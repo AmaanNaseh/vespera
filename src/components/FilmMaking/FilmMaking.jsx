@@ -103,9 +103,9 @@ const FilmMaking = () => {
       <ul className="mt-[30px] space-y-4">
           <li className="bg-gray-800 p-4 rounded-lg lg:w-[600px] md:w-[500px] w-[300px]" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Registration Starts</span><br></br> Oct 13th, 12:00 PM</li>
           <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 1 Starts</span><br></br> Oct 13th, 12:00 AM</li>
-          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 1 Submission</span><br></br> Oct 22th, 10:00 PM</li>
-          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 1 Results</span><br></br> Oct 21th, 8:00 AM</li>
-          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 2 Starts</span><br></br> Oct 25th, 10:00 PM</li>
+          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 1 Submission</span><br></br> Oct 21th, 12:00 AM</li>
+          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 1 Results</span><br></br> Oct 22th, 05:00 PM</li>
+          <li className="bg-gray-800 p-4 rounded-lg" style={{backgroundColor:'rgba(45, 45, 45, 1)', color:'white'}}><span className='font-bold'>Round 2 Starts</span><br></br> Oct 25th, 08:00 AM</li>
         </ul>
       </div>
       <Faq/>
