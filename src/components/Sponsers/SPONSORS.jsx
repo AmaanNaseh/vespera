@@ -16,7 +16,7 @@ function SponsorSection({ title, sponsors }) {
         {sponsors.length > 0 ? (
           sponsors.map((sponsor, index) => (
             <div
-              className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl md:w-[500px]  h-[230px]"
+              className="flex justify-center items-center bg-[#141414] shadow-lg p-4 rounded-xl md:w-[500px]  h-[230px] cursor-pointer"
               key={index}
               onClick={()=>{
                 if(sponsor.name==="Emmvee Solar"){

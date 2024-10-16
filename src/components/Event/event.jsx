@@ -32,7 +32,7 @@ function Event() {
         <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] xl:mt-[-100px] mb-[70px] w-full h-[0.5px]'></div>
         {/* Event Sections */}
         {events.map((event, index) => (
-            <div key={index} className="relative z-1 bg-neutral-800 bg-opacity-80  shadow-lg mx-auto mt-10 lg:mt-10 p-6 lg:p-10 rounded-lg w-[90%] container group custom-hover"
+            <div key={index} className="relative z-1 bg-neutral-800 bg-opacity-80  shadow-lg mx-auto mt-10 lg:mt-10 p-6 lg:p-10 rounded-lg w-[90%] container group custom-hover cursor-pointer"
                 onClick={() => {
                     if(event.title==='VesHack'){
                       navigate("/hackathon");
