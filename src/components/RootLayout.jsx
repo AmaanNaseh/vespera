@@ -8,6 +8,7 @@ const RootLayout = () => {
     <div>
       <header>
         <Navbar />
+        
       </header>
       <main className="mt-[50px]">
         <Outlet />
