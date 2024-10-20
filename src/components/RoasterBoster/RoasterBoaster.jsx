@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundHeading from './image/back.png'
-import background from './image/background.png'
+import background from './image/burn.png'
 import Themes from './image/image.png'
 import VerticalBar from './image/vertical-bar.png'
 import Faq from './faq'
@@ -17,7 +17,7 @@ const RoasterBoaster = () => {
         </div>
       <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
 
-      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'cover'}}></div>
+      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'100% 100%'}}></div>
       <div className='w-[80%] text-center'>
       <p className="mt-20 text-sm md:text-lg text-gray-300 mx-auto">
       Get ready for the ultimate showdown where humor meets competition in an electrifying roast battle! This isn’t just any ordinary event; it’s a chance for teams of two to step into the spotlight and face off against each other, all in the name of fun and creativity.

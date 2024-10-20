@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import backgroundHeading from "./image/back.png";
-import background from "./image/background.png";
+import background from "./image/hack.png";
 import Themes from "./image/image.png";
 import VerticalBar from "./image/vertical-bar.png";
 import Faq from "./faq";
@@ -41,7 +41,7 @@ function Hackathon() {
           className="w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl"
           style={{
             backgroundImage: `url(${background})`,
-            backgroundSize: "cover",
+            backgroundSize: "100% 100%",
           }}
         ></div>
         <div className="w-[80%] text-center">

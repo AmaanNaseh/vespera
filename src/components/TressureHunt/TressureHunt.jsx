@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundHeading from './image/back.png'
-import background from './image/background.png'
+import background from './image/hunt.png'
 import Themes from './image/image.png'
 import VerticalBar from './image/vertical-bar.png'
 import Faq from './faq'
@@ -17,7 +17,7 @@ const TreasureHunt = () => {
         </div>
       <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
 
-      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'cover'}}></div>
+      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'100% 100%'}}></div>
       <div className='w-[80%] text-center'>
       <p className="mt-20 text-sm md:text-lg text-gray-300 mx-auto">
       Get ready for an exhilarating adventure where teams will embark on a thrilling treasure hunt filled with clues, challenges, and excitement. This isn’t just 

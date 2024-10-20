@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import backgroundHeading from './image/back.png'
-import background from './image/background.png'
+import background from './image/case.png'
 import Themes from './image/image.png'
 import VerticalBar from './image/vertical-bar-2.png'
 import Faq from './faq'
@@ -30,7 +30,7 @@ function CaseStudy() {
         </div>
       <div className='bg-gray-300 mt-[-70px] sm:mt-[-70px] md:mt-[-50px] w-full h-[0.5px]'></div>
 
-      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'cover'}}></div>
+      <div className='w-[80%] sm:h-[600px] h-[300px] mt-[120px] rounded-3xl' style={{backgroundImage:`url(${background})`, backgroundSize:'100% 100%'}}></div>
       <div className='w-[80%] text-center'>
       <p className="mt-20 text-sm md:text-lg text-gray-300 mx-auto">
         Vescase is the Case Study Competition happening as part of Vespera'24 in collaboration with IoSC, AWSCC (AWS Cloud Club) and University Consulting Club (UCC) 

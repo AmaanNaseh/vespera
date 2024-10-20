@@ -52,6 +52,9 @@ const EventCard = ({ image, altImage, title, description }) => {
         if(title==='CASE STUDY'){
           navigate("/caseStudy");
         }
+        if(title==='PANEL DISCUSSION'){
+          navigate("/panelDiscussion");
+        }
         }}
     >
       <div className="flex justify-center items-center h-2/3">

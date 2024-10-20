@@ -1,9 +1,7 @@
 import React from "react";
 import sponsor1 from "../../assets/Sponsers/sponser1.png";
 import sponsor2 from "../../assets/Sponsers/sponser2.png";
-import hackathonSponsor1 from "../../assets/Sponsers/hackathon_sponsor1.png";
-import hackathonSponsor2 from "../../assets/Sponsers/hackathon_sponsor2.png";
-import hackathonSponsor3 from "../../assets/Sponsers/hackathon_sponsor3.png";
+import GoldSponsers1 from "../../assets/Sponsers/paschimgroup.jpg";
 import back from "./assets/back.png";
 import Footer from "../HomePage/Footer/Footer";
 
@@ -24,6 +22,9 @@ function SponsorSection({ title, sponsors }) {
                 }
                 if(sponsor.name==="Premier Energies"){
                   window.open("https://premierenergies.com/")
+                }
+                if(sponsor.name==="Paschim Group"){
+                  window.open("https://paschimgroup.com/new/index.php")
                 }
               }}
             >
@@ -49,14 +50,13 @@ function Sponsors() {
     { img: sponsor1, name: "Premier Energies" },
   ];
 
-  const platinumSponsors = [{}];
-  const goldSponsors = [{}];
-  // const silverSponsors = [{}];
-  const hackathonSponsors = [
-    { img: hackathonSponsor1, name: "Devfolio" },
-    { img: hackathonSponsor2, name: "Polygon" },
-    { img: hackathonSponsor3, name: "EthIndia" },
+  // const platinumSponsors = [{}];
+
+  const goldSponsors = [
+      { img: GoldSponsers1, name: "Paschim Group" },
   ];
+
+  // const silverSponsors = [{}];
 
   return (
     <section className="bg-black ">
@@ -84,20 +84,16 @@ function Sponsors() {
           <SponsorSection title="TITLE SPONSORS" sponsors={titleSponsors} />
 
           {/* Platinum Sponsors */}
-          <SponsorSection
+          {/* <SponsorSection
             title="PLATINUM SPONSORS"
             sponsors={platinumSponsors}
-          />
+          /> */}
 
           {/* Gold Sponsors */}
           <SponsorSection title="GOLD SPONSORS" sponsors={goldSponsors} />
 
           {/* Silver Sponsors */}
           {/* <SponsorSection title="SILVER SPONSORS" sponsors={silverSponsors} /> */}
-          <SponsorSection
-            title="HACKATHON SPONSORS"
-            sponsors={hackathonSponsors}
-          />
         </div>
       </div>
       <Footer />

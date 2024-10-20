@@ -17,6 +17,10 @@ import CaseStudy from "./components/CaseStudy/CaseStudy";
 import FilmMaking from "./components/FilmMaking/FilmMaking";
 import RoasterBoaster from "./components/RoasterBoster/RoasterBoaster";
 import TreasureHunt from "./components/TressureHunt/TressureHunt";
+import Vibrato from "./components/Vibrato/Vibrato";
+import PanelDiscussion from "./components/PanelDiscussion/PanelDiscussion";
+import SpeakerSession from "./components/SpeakerSession/SpeakerSession";
+import LaughCarnival from "./components/LaughCarvival/LaughCarnival";
 
 const Router = createBrowserRouter([
   {
@@ -62,6 +66,22 @@ const Router = createBrowserRouter([
       {
         path:"/treasureHunt",
         element:<TreasureHunt/>
+      },
+      {
+        path:"/vibrato",
+        element:<Vibrato/>
+      },
+      {
+        path:"/panelDiscussion",
+        element:<PanelDiscussion/>
+      },
+      {
+        path:"/speakerSession",
+        element:<SpeakerSession/>
+      },
+      {
+        path:"/laughCarnival",
+        element:<LaughCarnival/>
       }
     ]
   }
