@@ -1,22 +1,81 @@
-Vespera AWS
+# Vespera
 
-Steps of setup (common for everyone):
+An informative website about the upcoming hackathon ogranized by AWSCC USAR & IOSC USAR
 
-1. Open any folder in your laptop
-2. Open terminal and run following command (needs internet):
-   git clone https://github.com/AmaanNaseh/vespera.git
-3. cd vespera
-4. npm install
-5. npm run start
+## Live website: https://vespera-usar.netlify.app
 
-**\*** Note: Each person make 1 branch and upload code only in that branch:
+## Tech Stack
 
-1. git branch yourName
-2. git checkout yourName
-3. Do changes in code
-4. git add .
-5. git commit -m "msg"
-6. For first time, use:
-   git push --set-upstream yourName
-   Other than that simply use:
-   git push
+![Image](https://github.com/user-attachments/assets/9104871b-da48-4db1-89ee-f1133a912008)
+
+## Steps to run this project:
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/AmaanNaseh/vespera.git
+```
+
+2. Open project folder or navigate to it:
+
+```bash
+cd vespera
+```
+
+3. Install the dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run start
+```
+
+## Note (for contributors only): Each person make 1 branch and upload code only in that branch:
+
+Steps to make branch is as follows:
+
+1. Create branch with your name
+
+```bash
+git branch yourName
+```
+
+2. Select that branch & do changes in code as per need
+
+```bash
+git checkout yourName
+```
+
+3. Add all changed files to staging area
+
+```bash
+git add .
+```
+
+4. Commit your changes
+
+```bash
+git commit -m "msg"
+```
+
+5. Push code
+
+(i) First time
+
+```bash
+git push --set-upstream yourName
+```
+
+(ii) Subsequently
+
+```bash
+git push
+```
+
+## Project preview
+
+![Image](https://github.com/user-attachments/assets/8998bdc1-64e0-4b53-bc01-1e97327fba47)
